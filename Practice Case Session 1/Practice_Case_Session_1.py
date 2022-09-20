@@ -4,7 +4,7 @@
 # Create a python script which can upload a file from the internet to Google Cloud Storage (Bonus point if
 # you use Docker)
 
-# In[ ]:
+# In[1]:
 
 
 from google.cloud import storage
@@ -37,13 +37,13 @@ def authenticate_implicit_with_adc(project_id="your-google-cloud-project-id"):
     print("Listed all storage buckets.")
 
 
-# In[8]:
+# In[2]:
 
 
 authenticate_implicit_with_adc(project_id="clever-seat-363006")
 
 
-# In[20]:
+# In[3]:
 
 
 from google.cloud import storage
@@ -72,14 +72,14 @@ def upload_blob_from_memory(bucket_name, contents, destination_blob_name):
     )
 
 
-# In[18]:
+# In[4]:
 
 
-file_path = 'C:/Users/Muhammad Hanif/Desktop/Data Science/Data Engineer/test.txt'
+file_path = 'https://codelabs.developers.google.com/static/codelabs/cloud-compute-engine/img/5bcdca7120f6201a.png?hl=id'
 
 
-# In[21]:
+# In[5]:
 
 
-upload_blob_from_memory('fellowship-777',file_path, 'test.txt')
+upload_blob_from_memory('fellowship-777',file_path, 'gcp.jpeg')
 
